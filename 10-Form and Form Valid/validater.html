@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container styling */
+.form-container {
+  font-family: sans-serif;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* 1. When input is valid */
+input:focus:valid {
+  border-color: #2ecc71;
+}
+
+/* 2. When input is invalid AND not empty */
+input:focus:invalid:not(:placeholder-shown) {
+  border-color: #e74c3c;
+}
+
+/* Hide error message by default */
+.error-msg {
+  display: none;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* 3. Show error message only when invalid and not empty */
+input:focus:invalid:not(:placeholder-shown) ~ .error-msg {
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+  <form>
+    <h2>Login</h2>
+    
+    <div class="input-group">
+      <input type="email" id="email" placeholder="Email Address" required>
+      <span class="error-msg">Please enter a valid email.</span>
+    </div>
+
+    <div class="input-group">
+      <!-- Pattern: Minimum 8 chars, at least 1 letter and 1 number -->
+      <input type="password" id="password" placeholder="Password" 
+             pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+      <span class="error-msg">Must be 8+ characters with a letter & number.</span>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
