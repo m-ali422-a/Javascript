@@ -70,3 +70,16 @@
 //* let =>   ❌  => Reference Error
 //* const => ❌  => Reference Error
 
+                            //? Temporal Dead Zone
+
+// In temporal dead zone js knows that variable is exist but he is not giving us value. 
+
+// var (TDZ) => (NO)
+// let (TDZ) => (YES)
+// const (TDZ) => (YES)
+
+// console.log(a);
+
+//! This area is in (TDZ)
+
+// const a = 10;
