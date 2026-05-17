@@ -8,11 +8,11 @@
 //     console.log();
 // }
 
-// for(let i = 1; i<101 ; i++){
-//     console.log(i);
-// }
+for(let i = 1; i<101 ; i++){
+    console.log(i);
+}
 
-// 2 - while loop => condition is check before running
+//* 2 - while loop => condition is check before running
 
 // start
 // while (end) {
@@ -26,7 +26,7 @@
 //     i++;
 // }
 
-// 3 - do while => code run atleast once
+//* 3 - do while => code run atleast once
 
 // start
 // do{
@@ -69,4 +69,3 @@
 // } else if (operator === "/") {
 //     console.log("Result:", num1 / num2);
 // } else {
-

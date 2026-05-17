@@ -34,7 +34,7 @@
 
 //* && AND => both condition is true than ans true.
 //* || OR  => only one condition true than ans true.
-//* !  NOT
+//* !  NOT => rverse the condition => true to false and false to true.
 
 //? 5 - Unary Operaters
 
