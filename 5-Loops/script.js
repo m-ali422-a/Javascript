@@ -8,9 +8,9 @@
 //     console.log();
 // }
 
-for(let i = 1; i<101 ; i++){
-    console.log(i);
-}
+// for(let i = 1; i<101 ; i++){
+//     console.log(i);
+// }
 
 //* 2 - while loop => condition is check before running
 
@@ -69,3 +69,11 @@ for(let i = 1; i<101 ; i++){
 // } else if (operator === "/") {
 //     console.log("Result:", num1 / num2);
 // } else {
+
+
+
+
+    
+    // for(let marks = 0; marks <= 100; marks++){
+    //     if(marks >= 80){
+    //         console.log("Marks:", marks, "Grade: A");   
