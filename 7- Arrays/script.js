@@ -54,76 +54,83 @@
 // let arr = [1,2,3,4,5];
 // arr.reverse();
 // console.log(arr);
-
+                             //? These methods accept fncs
 //* 8- sort => use to sort the values in asceding and deciding orders
-//! Always accept a function
 
-let arr = [23,65,1,3,9];
-arr.sort(function(a,b){
-    // return a-b;  // Ascending order
-    // return b-a;  // Descending order
-});
-console.log(arr);
+// let arr = [23,65,1,3,9];
+// arr.sort(function(a,b){
+//     // return a-b;  // Ascending order
+//     // return b-a;  // Descending order
+// });
+// console.log(arr);
 
-// 9- foreach => this method run the function for every array value 
+//* 9- foreach => this method run the function for every array value 
 
 // let arr = [1,2,3,4,5];
 // arr.forEach((val) => {
 //     console.log(val+5);
 // })
 
-// 10- map => The map method is used when you want to create a new array based on the data in the old array.
+//* 10- map => The map method is used when you want to create a new array based on the data in the old array.
 
 // let arr = [1,2,3,4,5,6];
-// let newarr = arr.map((value) => {
-//     return value * 2;
-// })
+// let newarr = arr.map((val)=>{
+//     return 10;
+// });
 // console.log(newarr);
 
-// 11- filter => return the value true or false
+//* 11- filter => return the value true or false
 
 // let arr = [1,2,3,4,5,6,7];
-// let newarr = arr.filter((value) => {
-//     if(value < 2) return true;
-// })
+// let newarr = arr.filter((val)=>{
+//     if(val > 4) return true;
+// });
 // console.log(newarr);
 
-// 12- reduce => used for multiple values reduce in single value 
+//* 12- reduce => used for multiple values reduce in single value 
 
 // let arr = [1,2,3,4,5,6];
-// let newarr = arr.reduce((accumulater,value) => {
-//     return accumulater + value;
-// }, 0) 
+// let newarr = arr.reduce((accumulater,val)=>{
+//     return accumulater + val;
+// },0);
 // console.log(newarr);
 
-// 13- find => use for find the value from array 
+//* 13- find => use for find the value from array 
 
 // let arr = [1,2,3,4,5,6,1];
-// let newarr = arr.find((value) => {
-//     return  value === 2;
+// let newarr = arr.find((val)=>{
+//     return val === 4;
+// });
+// console.log(newarr);
+
+//* 14- some => if value match then answer is true 
+
+// let arr = [1,20,34,50,60];
+// let newarr = arr.some((val)=>{
+//     return val > 40;
 // })
 // console.log(newarr);
 
-// 14- some => if value match then answer is true 
+//* 15- every => if all values match the condition then answer is true
 
-// let arr = [1,20,34,50,60];
-// let newarr = arr.some((value) => {
-//     if(value < 20) return true;
-// })
+// let arr = [1,2,3,4,5,6,7,8];
+// let newarr = arr.every((val)=>{
+//     return val < 10;
+// });
 // console.log(newarr);
 
                         // Destructioring and Spread operater
 
 
-// Destructioring
+//* Destructioring => use to get the value from array and object in single variable.
 
 // let arr = [1,2,3,4,5];
-// let [a,b,,c] = arr;
+// let [a,b,c] = arr;
 
-// Spread operater 
+//* Spread operater => use to copy the array and object values in new variable without reference.
 
-// let arr = [1,2,3,4,5,6];
-// let arr1 = [...arr]
+// let arr = [1,2,3,4,5];
+// let arr1 = [...arr];
 
                                     // Practice Questions
 
