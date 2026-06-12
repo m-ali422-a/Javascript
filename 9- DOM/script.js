@@ -17,12 +17,3 @@
 // 4- Query Selector
 // => document.querySelector("h1");
 // => document.querySelectorAll("h1");
-
-
-
-
-
-
-
-
-

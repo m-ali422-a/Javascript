@@ -1,5 +1,5 @@
-                                    //? loops 
-                                    
+//? loops
+
 //* Loops helping to run the code without rewriting
 
 //* 1 - for loop
@@ -41,8 +41,6 @@
 // }
 // while(i<101);
 
-
-
 // 6. Grade Calculator
 // Marks:
 
@@ -53,8 +51,6 @@
 // 40–59 → C
 
 // Below 40 → Fail
-
-
 
 // let num1 = 10;
 // let num2 = 5;
@@ -70,10 +66,36 @@
 //     console.log("Result:", num1 / num2);
 // } else {
 
+// for(let marks = 0; marks <= 100; marks++){
+//     if(marks >= 80){
+//         console.log("Marks:", marks, "Grade: A");
 
 
+let answer = document.getElementById("answer");
+let buttons = document.querySelectorAll(".btn");
 
-    
-    // for(let marks = 0; marks <= 100; marks++){
-    //     if(marks >= 80){
-    //         console.log("Marks:", marks, "Grade: A");   
+let expression = "";
+
+buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+
+        let value = button.innerText;
+
+        if (value === "C") {
+            expression = "";
+            answer.value = "";
+        }
+
+        else if (value === "=") {
+            expression = eval(expression);
+            answer.value = expression;
+        }
+
+        else {
+            expression = expression + value;
+            answer.value = expression;
+        }
+
+    });
+
+});

@@ -1,66 +1,69 @@
-                                // Arrays in Javascript
+                                //? Arrays in Javascript
 
 // Array used to store multiple values in single variable
 
-// 1- Creating Array => let array = [];
+//* 1- Creating Array => let array = [];
 
-// 2- Accessing array => let array = [1,2,3,4,5]; 
+//* 2- Accessing array => let array = [1,2,3,4,5]; 
 // Array access using index no: let array = [3];
 
-// 3- Modify Array => let array = [1,2,3,4,5];  array[3] = 12;
+//* 3- Modify Array => let array = [1,2,3,4,5];  array[3] = 12;
 
-                                // Methods in Javascript
+                                //? Methods in Javascript
                 
-// 1- push => insert element in the end 
+//* 1- push => insert element in the end 
 
 // let arr = [1,2,3,4,5];
-// arr.push(12);
+// arr.push(10);
 // console.log(arr);
 
-// 2- pop => remove element from last
+//* 2- pop => remove element from last
 
 // let arr = [1,2,3,4,5];
 // arr.pop();
 // console.log(arr);
 
-// 3- shift => remove first element
+//* 3- shift => remove first element
 
 // let arr = [1,2,3,4,5];
 // arr.shift();
 // console.log(arr);
 
-// 4- unshift => insert element in start
+//* 4- unshift => insert element in start
 
 // let arr = [1,2,3,4,5];
-// arr.unshift(12);
+// arr.unshift(0);
 // console.log(arr);
 
-// 5- slice => get out the arrat part 
+
+//* 5- splice => change remove, and update array value
 
 // let arr = [1,2,3,4,5];
-// let newarr = arr.slice(0,3);
+// arr.splice(2,2,"ali"); //! index,value,update
 // console.log(arr);
 
-// 6- splice => change remove, and update array value
+
+//* 6- slice => get out the arrat part 
 
 // let arr = [1,2,3,4,5];
-// arr.splice(0,2,"ali");
+// let newarr = arr.slice(0,2);
 // console.log(arr);
 
-// 7- reverse => reverse the array values 
+//* 7- reverse => reverse the array values 
 
 // let arr = [1,2,3,4,5];
 // arr.reverse();
 // console.log(arr);
 
-// 8- sort => use to sort the values in asceding and deciding orders
+//* 8- sort => use to sort the values in asceding and deciding orders
+//! Always accept a function
 
-// let arr = [23,65,1,3,9];
-// arr.sort(function(a,b){
-//     return a-b; // Ascending order 
-//     return b-a; // Descending order
-// })
-// console.log(arr);
+let arr = [23,65,1,3,9];
+arr.sort(function(a,b){
+    // return a-b;  // Ascending order
+    // return b-a;  // Descending order
+});
+console.log(arr);
 
 // 9- foreach => this method run the function for every array value 
 
