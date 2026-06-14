@@ -72,7 +72,7 @@
 //     v();
 // }
 
-// abc(function(){
+// abc(()=>{
 //     console.log("M Ali");
 // });
 

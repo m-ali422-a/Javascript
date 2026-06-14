@@ -69,33 +69,3 @@
 // for(let marks = 0; marks <= 100; marks++){
 //     if(marks >= 80){
 //         console.log("Marks:", marks, "Grade: A");
-
-
-let answer = document.getElementById("answer");
-let buttons = document.querySelectorAll(".btn");
-
-let expression = "";
-
-buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-
-        let value = button.innerText;
-
-        if (value === "C") {
-            expression = "";
-            answer.value = "";
-        }
-
-        else if (value === "=") {
-            expression = eval(expression);
-            answer.value = expression;
-        }
-
-        else {
-            expression = expression + value;
-            answer.value = expression;
-        }
-
-    });
-
-});

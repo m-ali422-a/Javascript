@@ -11,7 +11,7 @@
 
                                 //? Methods in Javascript
                 
-//* 1- push => insert element in the end 
+//* 1- push => insert element in the end
 
 // let arr = [1,2,3,4,5];
 // arr.push(10);
@@ -119,7 +119,7 @@
 // });
 // console.log(newarr);
 
-                        // Destructioring and Spread operater
+                        //? Destructioring and Spread operater
 
 
 //* Destructioring => use to get the value from array and object in single variable.
