@@ -48,14 +48,16 @@
 // };
 
                             //? Copying Objects
+//* ager object aik nested object ha to spread operater se copy krne ke baad ager hum us ki value change kare ga to wo us ka reference pas karne lage ga.
+
 // let obj = {
 //     name: "Muhammad Ali",
 //     age: 21,
 //     Profession: "Developer",
 // };
-// Spread Operater 
-// let user = {...obj};
-// console.log(user);
+// // Spread Operater 
+// let obj2 = {...obj};
+// console.log(obj2);
 
                            //? Deep cloning for nested obj
 
@@ -72,6 +74,7 @@
 // }
 
 // let user2 = JSON.parse(JSON.stringify(user))
+// user2.name = "ali";
 // console.log(user2);
 
                             //? Optional Chaining
@@ -87,5 +90,5 @@
 //        }
 //     },
 // }
-// optional chaining
+// // optional chaining
 // let user1 = user.location?.address?.Home;

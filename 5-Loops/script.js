@@ -1,6 +1,6 @@
 //? loops
 
-//* Loops helping to run the code without rewriting
+//* Loops helping to repeat the code without rewriting
 
 //* 1 - for loop
 

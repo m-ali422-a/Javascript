@@ -11,7 +11,7 @@
                                 
                                 //? Variables in JavaScript 
 
-//* => variables is container to store data values and reuse and update the values 
+//* => variables is container to store data values, reuse and update the values 
 
 //? There are three types of variables to create the container to store data values :-
 

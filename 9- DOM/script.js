@@ -59,4 +59,3 @@
 // h1.style.color = "red";
 // h1.classList.add("heading");
 // h1.classList.remove("heading");
-

@@ -126,7 +126,7 @@
 // abc()();
 
                             //? Lexical Scope in JavaScript
-//* Lexical Scope ka matlab yeh hai ke variables ki accessibility (yaani woh kahan istemal ho sakte hain)  
+//* Lexical Scope ka matlab yeh hai ke variables ki accessibility (yaani woh kahan istemal ho sakte hain.)
 //! Example:-
 // function abc(){
 //     let a = 10;
