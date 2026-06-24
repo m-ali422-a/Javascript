@@ -39,3 +39,86 @@
 // fnc(()=>{
 //     console.log("Hello World");
 // });
+
+                                //? Call back Hell
+//* jab ap aik function ke ander dusra function bhejte ho aur wo dusra function ke ander teesra function bhejte ho aur ye chain chalti rahti hai to isko call back hell kehte hai.
+
+// let orderPlace = (receive)=>{
+//     console.log("Payment is in progress");
+
+//     setTimeout(()=>{
+//     console.log("Payment is received");
+//     receive();
+//     },3000);
+// }
+
+// let prepareOrder = (receive)=>{
+//     console.log("Yor preparation start");
+
+//     setTimeout(() => {
+//         console.log("Your order is prepared");
+//         receive();
+//     }, 3000);
+// }
+
+// let pickOrder = (receive)=>{
+//     console.log("Delivery boy is on the way");
+
+//     setTimeout(() => {
+//         console.log("Delivery boy pick the order");
+//         receive();
+//     }, 3000);
+// }
+
+// let deliver = ()=>{
+//     console.log("I am on my way to deliver ooder");
+
+//     setTimeout(()=>{
+//         console.log("Order deliver Success");
+//     }, 3000)
+// }
+
+// orderPlace(()=>{
+//     prepareOrder(()=>{
+//         pickOrder(()=>{
+//             deliver();
+//         });
+//     });
+// });
+
+                                //? Promises
+//* JavaScript me Promises ek built-in object hota hai. Yeh asynchronous operations (jaise API se data lana, file read karna) ke result ko handle karne ke kaam aata hai.
+
+//? Promises ke 3 state hote hai
+//* 1. Pending: Jab promise create hota hai to wo pending state me hota hai.
+//* 2. Fulfilled: Jab promise ka kaam successfully complete ho jata hai to wo fulfilled state me chala jata hai.
+//* 3. Rejected: Jab promise ka kaam fail ho jata hai to wo rejected state me chala jata hai.
+
+// let promise1 = new Promise((resolve,reject)=>{
+//     let ans = false;
+//     if(ans){
+//         resolve("Ans is resolve");
+//     }
+//     else{
+//         reject("Ans is reject")
+//     }
+// });
+
+// promise1.then((msg)=>{
+//     console.log("Then " + msg);
+// });
+// promise1.catch((msg)=>{
+//     console.log("Catch " + msg);
+// });
+
+                                //? Async Await
+//* Async Await JavaScript me asynchronous code ko synchronous code ki tarah likhne ka ek tarika hai. Yeh Promises ke upar built hota hai aur code ko zyada readable aur maintainable banata hai.
+//* Async always return promise.
+
+
+// let abc = async ()=>{
+//   let raw = await fetch("https://randomuser.me/api");
+//   let ans = await raw.json();
+//   console.log(ans);
+// }
+// abc();
