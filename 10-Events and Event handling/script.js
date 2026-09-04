@@ -49,12 +49,15 @@
 //* Event Delegation ek technique hai jo event bubbling ka use karti hai.Ismein har child par listener lagane ke bajaye parent par ek hi listener lagaya jata hai.
 
                                 //? Event Propagation
+//* Event Propagation ka matlab hai event ka DOM tree mein travel karna.
 //* Event Propagation ek process hai jismein jab koi event trigger hota hai to wo document ke root se start hoke targeted element tak jata hai aur phir wapas root tak jata hai.
 
 //* jab bhi hum koi event raise karte ha to event flow teen phasis ma hotta hai
 // * 1- Capturing Phase => top to bottom
 // * 2- Target Phase => targeted element
 // * 3- Bubbling Phase => bottom to top
+
+// sabse pehle event capturing hi hota hai phir target phase hota hai aur phir event bubbling hota hai. mager use pehle true karne se event capturing pehle hota hai aur phir target phase aur phir event bubbling hota hai.
 
                                 //? 1- Event Capturing
 // * jispe event ayyega wo apne parent element per event search karega aur phir uske parent element per event search karega.
@@ -70,9 +73,8 @@
 // }, true);
 
 
-
                                 //? 2- Event Bubbling
-// * jispe event ayyega ager us per event listner nahi hoga to wo apne parent element per event search karega.
+// * bubling ye hai ke jab bhi event trigger hoga to wo apne parent element per event search karega aur phir uske parent element per event search karega.
 
 //! Example:-
 // let ul = document.querySelector("ul");
