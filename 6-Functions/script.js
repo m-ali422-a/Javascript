@@ -68,8 +68,8 @@
                             //? First Class Function
 // we can use functions as values
 //! Example:-
-// let abc = (v)=>{
-//     v();
+// let abc = (val)=>{
+//     val();
 // }
 
 // abc(()=>{
@@ -118,7 +118,7 @@
 //! Example:-
 
 // let abc = ()=>{
-//     let a =10;
+//     let a = 10;
 //     return function(){
 //         console.log(a);
 //     }
