@@ -94,22 +94,23 @@
 //* 2. Fulfilled: Jab promise ka kaam successfully complete ho jata hai to wo fulfilled state me chala jata hai.
 //* 3. Rejected: Jab promise ka kaam fail ho jata hai to wo rejected state me chala jata hai.
 
-// let promise1 = new Promise((resolve,reject)=>{
-//     let ans = false;
-//     if(ans){
-//         resolve("Ans is resolve");
+// let pr = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         let ran = Math.floor(Math.random()*10);
+//     if(ran < 5){
+//         res("Promise is resolved" + ran);
+//     }else{
+//         rej("Promise is rejected" + ran);
 //     }
-//     else{
-//         reject("Ans is reject")
-//     }
-// });
+//     },2000)
+// })
 
-// promise1.then((msg)=>{
-//     console.log("Then " + msg);
-// });
-// promise1.catch((msg)=>{
-//     console.log("Catch " + msg);
-// });
+// pr.then((v)=>{
+//     console.log(v);
+// })
+// pr.catch((v)=>{
+//     console.log(v);
+// })
 
                                 //? Async Await
 //* Async Await JavaScript me asynchronous code ko synchronous code ki tarah likhne ka ek tarika hai. Yeh Promises ke upar built hota hai aur code ko zyada readable aur maintainable banata hai.
